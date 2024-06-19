@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'neon-world-font-f97386';
+  src: url('../../NeonWorldDemoRegular-lg6Mq.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('https://img.freepik.com/free-vector/3d-style-black-background-with-paper-layer_206725-669.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  color: #f5f5f5;
+  font-family: 'neon-world-font-f97386', sans-serif;
+  text-align: center;
+}
+
+.contact h1 {
+  font-family: "neon-world-font-f97386", sans-serif;
+  font-size: 4rem;
+  color: rgb(162, 255, 0);
+  margin-bottom: 2rem;
+}
+
+.icons {
+  display: flex;
+  gap: 5rem;
+}
+
+.icons a {
+  color: rgb(162, 255, 0);
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}

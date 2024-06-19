@@ -1,0 +1,176 @@
+@import "../../App.scss";
+@font-face {
+  font-family: 'cyberway-riders-font-f43849';
+  src: url('../../CyberwayRiders-lg97d.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'neoncity-display-font-f40954';
+  src: url('../../NeoncityDisplay-MVVLv.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.portfolio {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: rgb(81, 0, 255);
+    font-size: 30px;
+    font-family: 'cyberway-riders-font-f43849', sans-serif;
+    @include mobile {
+      padding-top: calc(100vh - 100px);
+      font-size: 24px;
+    }
+
+    .progressBar {
+      height: 10px;
+      background-color: rgb(151, 255, 6);
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+
+        @include mobile {
+          width: 100%;
+          max-height: 300px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+          @include mobile {
+            object-fit: contain;
+          }
+        }
+      }
+
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 34px;
+          font-family: 'neoncity-display-font-f40954', sans-serif;
+          color: rgb(162, 255, 0);
+          @include mobile {
+            font-size: 36px;
+          }
+        }
+
+        p {
+          color: gray;
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+
+        button {
+          background-color: rgb(115, 0, 255);
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          cursor: pointer;
+        }
+        button:hover {
+          background: rgb(61, 106, 255);
+          box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+          -webkit-transition: all 0.2s ease-out;
+          -moz-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+        }
+        
+        button:hover::before {
+          -webkit-animation: sh02 0.5s 0s linear;
+          -moz-animation: sh02 0.5s 0s linear;
+          animation: sh02 0.5s 0s linear;
+        }
+        
+        button::before {
+          content: '';
+          display: block;
+          width: 0px;
+          height: 86%;
+          position: absolute;
+          top: 7%;
+          left: 0%;
+          opacity: 0;
+          background: #fff;
+          box-shadow: 0 0 50px 30px #fff;
+          -webkit-transform: skewX(-20deg);
+          -moz-transform: skewX(-20deg);
+          -ms-transform: skewX(-20deg);
+          -o-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+        }
+        
+        @keyframes sh02 {
+          from {
+            opacity: 0;
+            left: 0%;
+          }
+        
+          50% {
+            opacity: 1;
+          }
+        
+          to {
+            opacity: 0;
+            left: 100%;
+          }
+        }
+        
+        button:active {
+          box-shadow: 0 0 0 0 transparent;
+          -webkit-transition: box-shadow 0.2s ease-in;
+          -moz-transition: box-shadow 0.2s ease-in;
+          transition: box-shadow 0.2s ease-in;
+        }
+        
+      }
+    }
+  }
+}
