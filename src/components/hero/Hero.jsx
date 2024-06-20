@@ -47,9 +47,9 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>MANAS TIRUVEEDULA</motion.h2>
+          <motion.h2 variants={textVariants}>T Manas Chakravarty</motion.h2>
           <motion.h1 variants={textVariants}>
-            19 year old tech enthusiast
+            19 year old tech enthusiast, Detail-oriented and proactive Computer Engineering student with a strong foundation in Blockchain & Cybersecurity and extensive experience in full-stack development. 
           </motion.h1>
           <motion.div variants={textVariants} className="buttons"> 
             <motion.button variants={textVariants}>
