@@ -43,6 +43,9 @@ const skills = [
   "Bitcoin Script",
   "Go",
   "Rust",
+  "Cosmos",
+  "Cloud",
+  "Flutter",
 ];
 
 
