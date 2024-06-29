@@ -1,11 +1,12 @@
 @font-face {
-  font-family: 'neoncity-display-font-f40954';
-  src: url('../../NeoncityDisplay-MVVLv.otf') format('opentype');
+  font-family: 'fox-on-the-go-font-f108846';
+  src: url('../../FoxOnTheGoBoldItalic-gx9qP.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
 .services {
-  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bfa7d6c-3711-4d59-aab6-07f07558689c/d74r1pn-dacf8fe9-05d6-4307-a918-713136e76a73.jpg/v1/fit/w_828,h_332,q_70,strp/symbiosis_by_w_e_z_d74r1pn-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvNWJmYTdkNmMtMzcxMS00ZDU5LWFhYjYtMDdmMDc1NTg2ODljXC9kNzRyMXBuLWRhY2Y4ZmU5LTA1ZDYtNDMwNy1hOTE4LTcxMzEzNmU3NmE3My5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.tSl_9BRpMgiDTx1ha4rMIO959wwz5ZPXtvEYRY4Bz98');
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f07c1535-c014-4636-b738-4a9af08f7e0d/dcycuwj-f3ea3de6-58a9-4aff-badb-0360b3d6d854.jpg/v1/fit/w_828,h_468,q_70,strp/into_the_spiderverse__by_sugarmints_dcycuwj-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njc5IiwicGF0aCI6IlwvZlwvZjA3YzE1MzUtYzAxNC00NjM2LWI3MzgtNGE5YWYwOGY3ZTBkXC9kY3ljdXdqLWYzZWEzZGU2LTU4YTktNGFmZi1iYWRiLTAzNjBiM2Q2ZDg1NC5qcGciLCJ3aWR0aCI6Ijw9MTIwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vu6Pw2wa3stRFUg9e1OudrGSdSUr8teDbjEFH4PaOjk');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -23,10 +24,10 @@
     position: relative; /* Ensure relative positioning for absolute positioning of glass effect */
   
     p {
-      font-size: 34px; /* Increase font size to 28px */
-      font-family: 'neoncity-display-font-f40954',sans-serif;
+      font-size: 23px; /* Increase font size to 28px */
+      font-family: 'fox-on-the-go-font-f108846', sans-serif;
       font-weight: 500;
-      color: #92ff04; /* White text color */
+      color: #ffffff; /* White text color */
       max-width: 80%;
       margin: 0 auto; /* Center the paragraph */
       position: relative; /* Maintain relative positioning for z-index */
@@ -37,6 +38,7 @@
       padding: 20px; /* Add padding for space around the text */
       border-radius: 10px; /* Rounded corners */
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      letter-spacing: 0.10em;
     }
   
     hr {
@@ -72,14 +74,35 @@
 
       h1 {
         font-size: 36px;
-        font-family: 'neoncity-display-font-f40954',sans-serif;
+        font-family: 'fox-on-the-go-font-f108846', sans-serif;
         background: rgba(0, 0, 0, 0.961); /* Semi-transparent white background */
         backdrop-filter: blur(10px); /* Apply blur effect to simulate glass */
         border-radius: 10px; /* Rounded corners */
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
         padding: 10px 20px; /* Add padding for space around the text */
         font-weight: 600;
-        color: #7bff00; /* Light blue text color */
+        color: #ffffff; /* Light blue text color */
+      }
+    }
+    .skillsContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 20px;
+      margin-bottom: 20px;
+      .skillItem {
+        background-color: rgba(30, 30, 30, 0.8); /* Dark semi-transparent background */
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        color: #a3ff6e; /* Light blue text color */
+        font-size: 30px;
+        font-family: 'fox-on-the-go-font-f108846', sans-serif;
+        font-weight: 500;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
       }
     }
   }
@@ -151,5 +174,26 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .services {
+      padding: 30px; /* Adjust padding for smaller screens */
+    }
+    .textContainer p {
+      font-size: 18px; /* Adjust font size for readability */
+    }
+    .titleContainer .title {
+      font-size: 28px; /* Adjust font size for titles */
+    }
+    .listContainer .box {
+      width: 100%; /* Adjust width for full width on smaller screens */
+    }
+    .skillsContainer .skillItem {
+      font-size: 24px; /* Adjust font size for skills */
+    }
+    .toolsContainer p {
+      font-size: 40px; /* Adjust font size for large headings */
+    }
+  }
+  
   // Add more specific styles as needed
 }
