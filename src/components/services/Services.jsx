@@ -63,7 +63,7 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-        Yo, people! <br />  I am Manas,your friendly neighborhood computer science student swinging in from the tech universe!
+        GM, Folks! <br />  I am Manas,your friendly neighborhood web3 wizard, swingin' in from the techiverse, ready to drop some alpha!
         </p>
         <hr />
       </motion.div>
@@ -81,7 +81,7 @@ const Services = () => {
         </div>
         <motion.div className="textContainer" variants={variants}>
           <p>
-          With a passion for open source and development, I'm swinging into action to tackle new challenges and craft innovative solutions in AI, Data Analytics, Flutter, DevOps, and Blockchain. I thrive on clean code and making a real impact. Always ready to team up and build something extraordinary.</p>
+          With a passion for open source and development, I'm swinging into action to tackle new challenges and craft innovative solutions in AI, Data Analytics, Flutter, DevOps and Blockchain. I thrive on clean code and making a real impact. Always ready to team up and build something extraordinary.</p>
           <hr />
         </motion.div>
       </motion.div>
