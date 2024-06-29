@@ -69,7 +69,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="https://avatarfiles.alphacoders.com/161/thumb-1920-161381.jpg" alt="Profile Picture" />
+          <img src="https://avatars.githubusercontent.com/u/113188197?v=4" alt="Profile Picture" />
           <h1>Skills and Expertise</h1>
         </div>
         <div className="skillsContainer">
