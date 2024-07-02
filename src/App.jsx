@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Contact from './components/contact/Contact';
 import Cursor from './components/cursor/Cursor';
 import Hero from './components/hero/Hero';
@@ -8,8 +8,10 @@ import Portfolio from './components/portfolio/Portfolio';
 import Services from './components/services/Services';
 import backgroundMusic from './beats.mp3'; // Importing the background music
 import './App.scss';
+
 const App = () => {
   const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -21,13 +23,15 @@ const App = () => {
 
     // Handle autoplay logic after user interaction
     const handleUserInteraction = () => {
-      audio.play()
-        .then(() => {
-          console.log('Audio playback started');
-        })
-        .catch(error => {
-          console.log('Audio playback failed: ', error);
-        });
+      if (isPlaying) {
+        audio.play()
+          .then(() => {
+            console.log('Audio playback started');
+          })
+          .catch(error => {
+            console.log('Audio playback failed: ', error);
+          });
+      }
     };
 
     // Event listener for user interaction
@@ -38,11 +42,26 @@ const App = () => {
       audio.pause();
       audio.currentTime = 0;
     };
-  }, []);
+  }, [isPlaying]);
+
+  const toggleMusic = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   return (
     <div>
       <audio ref={audioRef} src={backgroundMusic} />
+      <button className="toggle-music-button" onClick={toggleMusic}>
+        {isPlaying ? 'Stop Music' : 'Play Music'}
+      </button>
       <Cursor />
       <section id="Homepage">
         <Navbar />
