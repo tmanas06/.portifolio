@@ -1,53 +1,52 @@
 html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+}
+
+body {
+  /* background-image: url('https://your-background-image-url.jpg'); */
+  background-color: #0c0c1d; 
+  color: rgb(167, 40, 252);
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
   }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Audiowide", sans-serif;
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
   }
-  
- 
-  body {
-    /* background-image: url('https://your-background-image-url.jpg'); */
-    background-color: #0c0c1d; 
-    color: rgb(167, 40, 252);
-    background-size: cover;
-    background-position: center;
+}
+
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
   }
-  
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  section {
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-align: center;
-    overflow: hidden;
-  }
-  
-  @mixin mobile {
-    @media (max-width: 738px) {
-      @content;
-    }
-  }
-  @mixin tablet {
-    @media (max-width: 1024px) {
-      @content;
-    }
-  }
-  @mixin desktop {
-    @media (max-width: 1366px) {
-      @content;
-    }
-  }
-  /* app.scss */
+}
 
 .footer {
   background-color: #0f0f0f;
@@ -62,4 +61,22 @@ html {
 .footer-text {
   font-size: 14px;
   margin: 0;
+}
+
+/* Styles for the toggle music button */
+.toggle-music-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; // Ensure it stays on top
+}
+
+.toggle-music-button:hover {
+  background-color: #00cc18;
 }

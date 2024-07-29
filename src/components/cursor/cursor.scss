@@ -6,35 +6,46 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
   pointer-events: none;
   z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-in-out, opacity 0.15s ease-in-out;
+  will-change: transform;
+  opacity: 1;
 }
 
-.circle {
+.arrow {
   position: absolute;
-  width: 20px; /* Circle size */
-  height: 20px; /* Circle size */
-  border-radius: 50%;
-  background-color: limegreen;
-  mix-blend-mode: difference;
+  width: 30px;
+  height: 30px;
   transform: translate(-50%, -50%);
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px cyan) drop-shadow(0 0 6px magenta);
 }
 
 .ring {
   position: absolute;
-  width: 65px; /* Ring size */
-  height: 65px; /* Ring size */
-  border: 2px solid limegreen;
+  width: 40px; /* Ring size */
+  height: 40px; /* Ring size */
+  border: 2px solid cyan;
   border-radius: 50%;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
-  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  filter: drop-shadow(0 0 6px cyan);
 }
 
 .custom-cursor.hovered .ring {
-  width: 100px; /* Enlarged ring size on hover */
-  height: 100px; /* Enlarged ring size on hover */
+  width: 60px; /* Enlarged ring size on hover */
+  height: 60px; /* Enlarged ring size on hover */
+  transform: translate(-50%, -50%) scale(1.5); /* Smooth scale on hover */
+  opacity: 0.8; /* Slight opacity change on hover */
+  border-color: magenta;
+  filter: drop-shadow(0 0 6px magenta);
 }
 
+.custom-cursor.hidden {
+  opacity: 0; /* Hide cursor when inactive */
+}
