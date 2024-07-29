@@ -41,7 +41,7 @@ const projects = [
   {
     id: 6,
     title: "To-do-list on Blockchain",
-    img: "https://private-user-images.githubusercontent.com/113188197/305035883-8e5f367c-4882-4b17-b217-6014f632a452.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIyMjM2OTQsIm5iZiI6MTcyMjIyMzM5NCwicGF0aCI6Ii8xMTMxODgxOTcvMzA1MDM1ODgzLThlNWYzNjdjLTQ4ODItNGIxNy1iMjE3LTYwMTRmNjMyYTQ1Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcyOVQwMzIzMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMGYzNDg3YzdkN2I3OTgyYzkwMDI0MWQ3NjliZTRjZTQyYzNmMjk3M2M5NzNlMGM0ZjhmY2YzOWUwZDY4NTA1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5PjnA7h0Pe_xAZMLHplSViQ_qGU_rNhvHZ9hszEOeBM",
+    img: "https://thumbs.dreamstime.com/z/to-do-list-tasks-clipboard-checkmark-words-remember-goals-checklist-wooden-word-career-top-priorities-31478262.jpg",
     link: "https://github.com/tmanas06/To-do-list-",
     desc: "A simple to-do-list application on blockchain using remix ide and solidity on VS Code.",
   },

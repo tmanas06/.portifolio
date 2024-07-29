@@ -11,7 +11,7 @@ import './App.scss';
 
 const App = () => {
   const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -21,8 +21,7 @@ const App = () => {
     audio.volume = 1.0;
     audio.loop = true;
 
-    // Handle autoplay logic after user interaction
-    const handleUserInteraction = () => {
+    const playAudio = () => {
       if (isPlaying) {
         audio.play()
           .then(() => {
@@ -34,7 +33,22 @@ const App = () => {
       }
     };
 
+    // Play audio immediately if the state is true
+    playAudio();
+
     // Event listener for user interaction
+    const handleUserInteraction = () => {
+      if (isPlaying) {
+        audio.play()
+          .then(() => {
+            console.log('Audio playback resumed after interaction');
+          })
+          .catch(error => {
+            console.log('Audio playback failed: ', error);
+          });
+      }
+    };
+
     document.addEventListener('click', handleUserInteraction);
 
     return () => {
