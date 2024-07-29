@@ -1,5 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const textVariants = {
   initial: {
@@ -31,7 +32,7 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -49,13 +50,16 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>T Manas Chakravarty</motion.h2>
           <motion.h1 variants={textVariants}>
-            19 year old tech enthusiast, Detail-oriented and proactive Computer Engineering student with a strong foundation in Blockchain & Cybersecurity and extensive experience in full-stack development. 
+            19 year old tech enthusiast, Detail-oriented and proactive Computer Engineering student with a strong foundation in Blockchain & Cybersecurity and extensive experience in full-stack development.
           </motion.h1>
-          <motion.div variants={textVariants} className="buttons"> 
-            <motion.button variants={textVariants}>
-                Explore More
-            </motion.button> <br></br> <br></br>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+          <motion.div variants={textVariants} className="buttons">
+            <Link to="Portfolio" smooth={true} duration={500}>
+              <motion.button variants={textVariants}>Explore More</motion.button>
+            </Link>
+            <br /> <br />
+            <Link to="Contact" smooth={true} duration={500}>
+              <motion.button variants={textVariants}>Contact Me</motion.button>
+            </Link>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -65,7 +69,7 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-        <div className="imageContainer">
+      <div className="imageContainer">
         <img src="/hero.png" alt="" />
       </div>
     </div>
