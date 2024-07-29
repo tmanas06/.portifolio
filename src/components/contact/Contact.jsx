@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLinkedin, FaMedium, FaBlogger, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaMedium, FaBlogger, FaTwitter, FaInstagram, FaTelegram } from "react-icons/fa";
 import "./contact.scss";
 
 // Define your motion variants
@@ -70,20 +70,23 @@ const Contact = () => {
         <StyledIcon href="mailto:hello@react.dev" className="icon" variants={variants} title="221003003cse@gmail.com">
           <FaEnvelope />
         </StyledIcon>
-        <StyledIcon href="https://www.linkedin.com/in/t-manas-chakravarty-91958224b/" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="LinkedIn">
+        <StyledIcon href="https://www.linkedin.com/in/t-manas-chakravarty-91958224b/" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="t-manas-chakravarty-91958224b">
           <FaLinkedin />
         </StyledIcon>
-        <StyledIcon href="https://medium.com/@2210030003cse" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="Medium">
+        <StyledIcon href="https://medium.com/@2210030003cse" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="2210030003cse">
           <FaMedium />
         </StyledIcon>
-        <StyledIcon href="https://techieresearch.blogspot.com/" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="blogspot">
+        <StyledIcon href="https://techieresearch.blogspot.com/" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="techieresearch">
           <FaBlogger />
         </StyledIcon>
-        <StyledIcon href="https://x.com/tmanas2004" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="Twitter">
+        <StyledIcon href="https://x.com/tmanas2004" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="tmanas2004">
           <FaTwitter />
         </StyledIcon>
-        <StyledIcon href="https://www.instagram.com/tmanas2004/" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="Instagram">
+        <StyledIcon href="https://www.instagram.com/tmanas2004/" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="tmanas2004">
           <FaInstagram />
+        </StyledIcon>
+        <StyledIcon href="https://t.me/tmanas" target="_blank" rel="noopener noreferrer" className="icon" variants={variants} title="@tmanas">
+          <FaTelegram />
         </StyledIcon>
       </motion.div>
       </motion.div>
