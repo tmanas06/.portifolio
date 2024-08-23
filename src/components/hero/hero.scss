@@ -78,8 +78,6 @@
           letter-spacing: 10px;
         }
       }
-      
-      
 
       h1 {
         font-family: 'SDGlitch', sans-serif;
@@ -191,5 +189,17 @@
   img {
     width: 50px;
   }
-  
+
+  /* Media query for tablets and smaller devices */
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    height: auto; /* Adjust height for mobile screens */
+    padding: 5px; /* Adjust padding for mobile screens */
+    font-size: 14px; /* Adjust font size for mobile screens */
+  }
 }
